@@ -15,6 +15,6 @@ module.exports = {
                 present.push(axisX_R.toString() + axisY_R.toString());
             } 
         });
-        return Array.from(new Set(present)).length;
+        return new Set(present).size;
     }
 }

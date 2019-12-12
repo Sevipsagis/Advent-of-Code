@@ -8,6 +8,6 @@ module.exports = {
             axisY += e == "^" ? 1 : e == "v" ? -1 : 0;
             present.push(axisX.toString() + axisY.toString());
         });
-        return Array.from(new Set(present)).length;
+        return new Set(present).size;
     }
 }
